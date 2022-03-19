@@ -29,9 +29,11 @@
       .top-head h1,
       .top-head p {
         text-align: center;
+        /* margin-bottom: 0; */
       }
       .top-head {
         text-align: left;
+        /* margin-bottom: 0; */
       }
 
       .info {
@@ -41,16 +43,11 @@
       .row {
         border: 1px double rgb(66, 55, 55);
         margin: 2px;
+        padding-left: 2em;
       }
-
-      .list-column {
-        width: 50%;
-        border: 1px dotted gray;
-        /* margin-left: 10px; */
-      }
-
       .row-c {
         display: flex;
+        border: 1px double rgb(66, 55, 55);
       }
       h2 {
         font-size: 1.5em;
@@ -72,6 +69,7 @@
         /* 1em = 16px by default
           2em = 32px by default
           formula: value-of-px/16px = value-of-em */
+        text-align: center;
         padding: 0.5em;
       }
       #date {
@@ -88,9 +86,19 @@
       }
       .list-column {
         color: #1d824c;
+        padding-left: 1em;
+        width: 50%;
+        border: 1px dotted gray;
       }
       .list-column span {
         color: black;
+      }
+      #field {
+        text-align: center;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        /* padding-top: 0%;
+          padding-bottom: 0%; */
       }
     </style>
   </head>
@@ -99,85 +107,91 @@
       <h1>
         <span class="first-name">Muhammad Asad</span>
         <span class="last-name">Saeed</span>
+        <h2 id="field">Web Developer</h2>
       </h1>
-      <p>Address · phone</p>
-      <p id="contact">Email · LinkedIn Profile · Twitter/Blog/Portfolio</p>
+      <p>Kahna Nau, Lahore · 03061402623</p>
+      <p id="contact">
+        <a href="mailto:am123malikk@gmail.com">Email</a> ·
+        <a href="https://www.linkedin.com/in/axad-malik-6362201aa"
+          >LinkedIn Profile</a
+        >
+      </p>
     </div>
     <div>
       <p class="objective">
-        carrier object Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Maiores aspernatur soluta, aliquid ut, dignissimos quod totam, magni
-        nihil suscipit maxime at architecto adipisci perspiciatis blanditiis.
-        Sapiente nihil non magni consequatur.
+        Hi, this is Asad. The Website Developer. Currently i am working as a
+        fronted developer. Soon i will be full stack developer.
       </p>
     </div>
     <div class="info">
       <!-- Experience -->
       <h2>Experience</h2>
       <div class="row">
-        <p id="date">Date: [From] to [To]</p>
+        <p id="date">Date: [January 2022] to [Current]</p>
         <p></p>
         <p>
-          <span id="job-title">Job Title</span>,
-          <span id="company">Company</span>
+          <span id="job-title">Frontend Developer</span>,
+          <span id="company">Self Employed</span>
         </p>
         <p>
-          Describe your responsibilities and achievements in terms of impact and
-          results. Use examples, but keep it short.
+          I am a frontend developer that is capable of creating both static and
+          dynamic websites. My responsibilities include creating a visually
+          appealing and responsive website. I am a starting level developer on
+          my way to intermediate level accomplishments.
         </p>
       </div>
       <div class="row">
-        <p id="date">Date: [From] to [To]</p>
+        <p id="date">Date: [September 2018] to [January 2022]</p>
         <p></p>
         <p>
-          <span id="job-title">Job Title</span>,
-          <span id="company">Company</span>
+          <span id="job-title">Programmer</span>,
+          <span id="company">Self Employed</span>
         </p>
         <p>
-          Describe your responsibilities and achievements in terms of impact and
-          results. Use examples, but keep it short.
+          I work as a coder. Since 2018, I've been learning programming
+          languages. I developed problem-solving and logic-building skills,
+          which I then converted into computer code. Structural and
+          Object-Oriented Programming were two areas in which I worked.
         </p>
       </div>
       <!-- Education -->
       <h2>Education</h2>
       <div class="row">
-        <p id="date">Month, Year</p>
+        <p id="date">September, 2017 - June 2019</p>
         <p>
-          <span id="job-title">Degree Title</span>,
-          <span id="company">School</span>
+          <span id="job-title">ICS</span>,
+          <span id="company">GKRSC College</span>
         </p>
         <p>
-          Its okay to brag about your GPA, awards, and honors. Feel free to
-          summarize your coursework too
+          Overall-Grade: A <br> Major-Subject: Computer Science <br> Got 94% in Computer Science
         </p>
       </div>
       <div class="row">
-        <p id="date">Month, Year</p>
+        <p id="date">September, 2019 - Current</p>
         <p>
-          <span id="job-title">Degree Title</span>,
-          <span id="company">School</span>
+          <span id="job-title">Bachelors in Software Enginnering</span>,
+          <span id="company">COMSATS University Islamabad, Lahore</span>
         </p>
         <p>
-          Its okay to brag about your GPA, awards, and honors. Feel free to
-          summarize your coursework too
+          Overall-Grade: A <br>
+          Major-Subjects: PF - OOP - Data Structures - Web Development
         </p>
       </div>
 
       <!-- Skills -->
+      <h2>Skills</h2>
       <div class="row-c">
         <div class="list-column">
           <ul>
-            <li><span>skill n</span></li>
-            <li><span>skill n</span></li>
-            <li><span>skill n</span></li>
+            <li><span>Problem Solving</span></li>
+            <li><span>Logic Building</span></li>
+            <li><span>Wordpress Development</span></li>
           </ul>
         </div>
-
         <div class="list-column">
           <ul>
-            <li><span>skill n</span></li>
-            <li><span>skill n</span></li>
-            <li><span>skill n</span></li>
+            <li><span>Frontend Developer</span></li>
+            <li><span>SEO</span></li>
           </ul>
         </div>
       </div>
