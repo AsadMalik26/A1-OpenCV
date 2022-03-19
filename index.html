@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV-1</title>
     <style>
+     
       * {
         box-sizing: border-box;
+        font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+          sans-serif;
+        font-size: 16px;
         /* margin: 0;
         padding: 0; */
       }
@@ -33,31 +37,61 @@
         border: 1px double rgb(66, 55, 55);
         margin: 2px;
       }
+
       .column-1,
       .column-2 {
         width: 50%;
         border: 1px dotted gray;
         margin-left: 20px;
       }
+
       .row-c {
         display: flex;
       }
-      .first-name, .last-name{
-          font-family:'Times New Roman', Times, serif;
-          color: rgb(100, 100, 100);
-          font-size:larger;
+      h2{
+          font-size: 1.5em;
       }
-      .last-name{
-          color: black;
+      .first-name,
+      .last-name {
+        font-family: "Times New Roman", Times, serif;
+        color: rgb(160, 160, 160);
+        font-size: 2em;
       }
-
+      .last-name {
+        color: rgb(37, 37, 37);
+      }
+      #contact{
+          font-weight: bold;
+          color: #1d824c
+      }
+      .objective{
+          /* 1em = 16px by default
+          2em = 32px by default
+          formula: value-of-px/16px = value-of-em */
+          padding: 0.5em
+      }
+      #date{
+          font-weight: bold;
+      }
+      #job-title{
+        color: #1d824c;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      #company{
+        font-weight: bold;
+        font-size: 1.2em;
+      }
     </style>
   </head>
   <body>
     <div class="top-head">
-      <h1><span class="first-name">Muhammad Asad</span> <span class="last-name">Saeed</span></h1>
+      <h1>
+        <span class="first-name">Muhammad Asad</span>
+        <span class="last-name">Saeed</span>
+      </h1>
       <p>Address · phone</p>
-      <p>Email · LinkedIn Profile · Twitter/Blog/Portfolio</p>
+      <p id="contact">Email · LinkedIn Profile · Twitter/Blog/Portfolio</p>
     </div>
     <div>
       <p class="objective">
@@ -71,34 +105,34 @@
       <!-- Experience -->
       <h2>Experience</h2>
       <div class="row">
-        <p>Date: <span>Frpm </span> to <span>To</span></p>
-        <p>Job Title, Company</p>
+        <p id="date">Date: [From] to [To]<p>
+        <p><span id="job-title">Job Title</span>, <span id="company">Company</span></p>
         <p>
           Describe your responsibilities and achievements in terms of impact and
           results. Use examples, but keep it short.
         </p>
       </div>
       <div class="row">
-        <p>Date: <span>Frpm </span> to <span>To</span></p>
-        <p>Job Title, Company</p>
-        <p>
-          Describe your responsibilities and achievements in terms of impact and
-          results. Use examples, but keep it short.
-        </p>
+        <p id="date">Date: [From] to [To]<p>
+            <p><span id="job-title">Job Title</span>, <span id="company">Company</span></p>
+            <p>
+              Describe your responsibilities and achievements in terms of impact and
+              results. Use examples, but keep it short.
+            </p>
       </div>
       <!-- Education -->
       <h2>Education</h2>
       <div class="row">
-        <p>Month, Year</p>
-        <p>Degree Title, School</p>
+        <p id="date">Month, Year</p>
+        <p> <span id="job-title">Degree Title</span>, <span id="company">School</span></p>
         <p>
           Its okay to brag about your GPA, awards, and honors. Feel free to
           summarize your coursework too
         </p>
       </div>
       <div class="row">
-        <p>Month, Year</p>
-        <p>Degree Title, School</p>
+        <p id="date">Month, Year</p>
+        <p> <span id="job-title">Degree Title</span>, <span id="company">School</span></p>
         <p>
           Its okay to brag about your GPA, awards, and honors. Feel free to
           summarize your coursework too
