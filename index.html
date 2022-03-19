@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV-1</title>
     <style>
-     
       * {
         box-sizing: border-box;
         font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
@@ -15,10 +14,16 @@
         /* margin: 0;
         padding: 0; */
       }
+      body {
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: aliceblue;
+      }
+
       .top-head,
       .objective {
-        border: 1px double blue;
-        margin-bottom: 3px;
+        border: 1px double rgb(66, 55, 55);
+        /* margin-bottom: 1px; */
       }
 
       .top-head h1,
@@ -30,7 +35,7 @@
       }
 
       .info {
-        border: 1px double blue;
+        /* border: 1px double blue; */
         margin: 2px;
       }
       .row {
@@ -38,18 +43,17 @@
         margin: 2px;
       }
 
-      .column-1,
-      .column-2 {
+      .list-column {
         width: 50%;
         border: 1px dotted gray;
-        margin-left: 20px;
+        /* margin-left: 10px; */
       }
 
       .row-c {
         display: flex;
       }
-      h2{
-          font-size: 1.5em;
+      h2 {
+        font-size: 1.5em;
       }
       .first-name,
       .last-name {
@@ -60,27 +64,33 @@
       .last-name {
         color: rgb(37, 37, 37);
       }
-      #contact{
-          font-weight: bold;
-          color: #1d824c
+      #contact {
+        font-weight: bold;
+        color: #1d824c;
       }
-      .objective{
-          /* 1em = 16px by default
+      .objective {
+        /* 1em = 16px by default
           2em = 32px by default
           formula: value-of-px/16px = value-of-em */
-          padding: 0.5em
+        padding: 0.5em;
       }
-      #date{
-          font-weight: bold;
+      #date {
+        font-weight: bold;
       }
-      #job-title{
+      #job-title {
         color: #1d824c;
         font-weight: bold;
         font-size: 1.2em;
       }
-      #company{
+      #company {
         font-weight: bold;
         font-size: 1.2em;
+      }
+      .list-column {
+        color: #1d824c;
+      }
+      .list-column span {
+        color: black;
       }
     </style>
   </head>
@@ -105,26 +115,37 @@
       <!-- Experience -->
       <h2>Experience</h2>
       <div class="row">
-        <p id="date">Date: [From] to [To]<p>
-        <p><span id="job-title">Job Title</span>, <span id="company">Company</span></p>
+        <p id="date">Date: [From] to [To]</p>
+        <p></p>
+        <p>
+          <span id="job-title">Job Title</span>,
+          <span id="company">Company</span>
+        </p>
         <p>
           Describe your responsibilities and achievements in terms of impact and
           results. Use examples, but keep it short.
         </p>
       </div>
       <div class="row">
-        <p id="date">Date: [From] to [To]<p>
-            <p><span id="job-title">Job Title</span>, <span id="company">Company</span></p>
-            <p>
-              Describe your responsibilities and achievements in terms of impact and
-              results. Use examples, but keep it short.
-            </p>
+        <p id="date">Date: [From] to [To]</p>
+        <p></p>
+        <p>
+          <span id="job-title">Job Title</span>,
+          <span id="company">Company</span>
+        </p>
+        <p>
+          Describe your responsibilities and achievements in terms of impact and
+          results. Use examples, but keep it short.
+        </p>
       </div>
       <!-- Education -->
       <h2>Education</h2>
       <div class="row">
         <p id="date">Month, Year</p>
-        <p> <span id="job-title">Degree Title</span>, <span id="company">School</span></p>
+        <p>
+          <span id="job-title">Degree Title</span>,
+          <span id="company">School</span>
+        </p>
         <p>
           Its okay to brag about your GPA, awards, and honors. Feel free to
           summarize your coursework too
@@ -132,7 +153,10 @@
       </div>
       <div class="row">
         <p id="date">Month, Year</p>
-        <p> <span id="job-title">Degree Title</span>, <span id="company">School</span></p>
+        <p>
+          <span id="job-title">Degree Title</span>,
+          <span id="company">School</span>
+        </p>
         <p>
           Its okay to brag about your GPA, awards, and honors. Feel free to
           summarize your coursework too
@@ -141,19 +165,19 @@
 
       <!-- Skills -->
       <div class="row-c">
-        <div class="column-1">
+        <div class="list-column">
           <ul>
-            <li>skill n</li>
-            <li>skill n</li>
-            <li>skill n</li>
+            <li><span>skill n</span></li>
+            <li><span>skill n</span></li>
+            <li><span>skill n</span></li>
           </ul>
         </div>
 
-        <div class="column-2">
+        <div class="list-column">
           <ul>
-            <li>skill n</li>
-            <li>skill n</li>
-            <li>skill n</li>
+            <li><span>skill n</span></li>
+            <li><span>skill n</span></li>
+            <li><span>skill n</span></li>
           </ul>
         </div>
       </div>
