@@ -6,10 +6,30 @@
         padding: 0; */
 }
 body {
-  margin-left: 15%;
-  margin-right: 15%;
   background-color: aliceblue;
 }
+@media screen and (min-width: 768px){
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: aliceblue;
+  }
+}
+@media screen and (min-width: 992px){
+  body {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: aliceblue;
+  }
+}
+@media screen and (min-width: 1080px){
+  body {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: aliceblue;
+  }
+}
+
 
 .top-head,
 .objective {
